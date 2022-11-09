@@ -43,5 +43,15 @@ Phase(4):
 - 
 
 Phase(5):
+- Using boot-strap styling the home page. 
+- Added dropdown menu desiplaying themulti tab select option using boot-strap. works and responds to the desired controller Anime controller. 
+- continue working on stytling. 
+- Create a Sql service connection and create a new table, add to databale & insert values.
+- Select the folder of your project solution, right click & select Nugetpackage manager. 
+- Download the System.Data.SqlClient nuget package from the .NET library. 
+- 
 
 
+Phase(6):
+- Create a new model within the models folder. 
+- 
