@@ -1,7 +1,36 @@
-﻿
+﻿@model List<AnimeMangaMVCApp.Models.AnimeList.Anime>
+
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Index Animes</h1>
 
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th>ID:</th>
+            <th>Name:</th>
+            <th>Author:</th>
+            <th>Genre:</th>
+            <th>Summary:</th>
+            <th>Number Of Arks:</th>
+            <th>Rating:</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var anime in Model)
+        {
+            <tr>
+                <td>@anime.Id</td>
+                <td>@anime.Name</td>
+                <td>@anime.Author</td>
+                <td>@anime.Genre</td>
+                <td>@anime.Summary</td>
+                <td>@anime.NumOfArks</td>
+                <td>@anime.Rating</td>
+            </tr>
+        }
+    </tbody>
+</table>

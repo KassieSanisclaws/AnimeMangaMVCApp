@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AnimeMangaMVCApp.Models.AnimeList;
+using Microsoft.EntityFrameworkCore;
 
 namespace AnimeMangaMVCApp.Data
 {
@@ -8,7 +9,7 @@ namespace AnimeMangaMVCApp.Data
         {
         }
 
-        public DbSet<> MyProperty { get; set; }
+        public DbSet<Anime> Animes { get; set; }
 
     }
 }

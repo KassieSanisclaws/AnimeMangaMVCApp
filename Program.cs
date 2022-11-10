@@ -1,7 +1,12 @@
+using AnimeMangaMVCApp.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<MVCAnimeWrldDemoDbContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("MvcAnimeDemoConnectionString")));
 
 var app = builder.Build();
 
