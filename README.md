@@ -53,5 +53,19 @@ Phase(5):
 
 
 Phase(6):
-- Create a new model within the models folder. 
+- Create a new folder within the project solution folder, name it what you would like (I chose Data). 
+- Download from tools select NugetManager packages into the project Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.SqlServer, Microsoft.EntityFrameworkCore.Tool.
+- Create a new class within the newly created folder naming MVCDemoDbContext.
+- In the class constructor make it an instance of the DbContext class.
+- Click on the DbContext and them press conbination of CTRL + . & intellisence will open select the package you added EntityFrameworkCore.
+- Click on the MVCDemoDbContext & CTRL + . & select the intellisence constructor method with options which will be automatically generated and this helps us pass the options back to the base parent class. 
+- Next create a properties are used to access the tables that EntityCore Framework will create within your DataBase Sql Server.
+- Within the public slass parent on a new line type prop and press tab button 2x(twice), this will get intellisence to auto generate the public method.
+- Then change the Int to DbSet<{which is the model that you create to perform crud operations on}> & the reason is to perform crud operation on a DbData.  
+
+
+Phase(7):
+- Create a new folder within the Models folder within your project solution file. Name it what you would like.
+- Next create anew class a model in C# is a class. Rigth click the newly created folder select add, select class & give it a namwe doe the model you want to perform crud operations on.
 - 
+
