@@ -2,7 +2,7 @@
 
 namespace AnimeMangaMVCApp.Models
 {
-    public class AddAnimeViewModel
+    public class UpdateAnimeViewModel
     {
         public Guid Id { get; set; }
         [Required]
